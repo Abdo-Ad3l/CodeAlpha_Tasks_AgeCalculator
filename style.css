@@ -1,0 +1,103 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #008cff;
+}
+
+.container {
+  width: 100%;
+  max-width: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color: #fff; */
+  padding: 50px 30px;
+}
+
+.container * {
+  font-family: "Poppins", sans-serif;
+  border: none;
+  outline: none;
+}
+
+.wrapper-inputs {
+  background-color: #080808;
+  padding: 30px 25px;
+  border-radius: 8px;
+  margin-bottom: 50px;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+}
+
+input,
+button {
+  border-radius: 5px;
+  height: 50px;
+  font-weight: 500;
+  background-color: #fff;
+  color: #080808;
+}
+
+input {
+  width: 60%;
+  padding: 0 20px;
+  font-size: 14px;
+  cursor: text;
+}
+
+button {
+  width: 30%;
+  float: right;
+  cursor: pointer;
+}
+
+.wrapper-outputs {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper-outputs div:not(:last-of-type) {
+  width: 100px;
+  height: 100px;
+  background-color: #080808;
+  color: #fff;
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+  padding: 20px 0;
+}
+
+.birth-day {
+  background-color: #080808;
+  position: absolute;
+  width: 87%;
+  bottom: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  text-align: center;
+  transition: 0.3s;
+  display: none;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+}
+
+span {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+p:not(:last-of-type) {
+  font-size: 14px;
+  color: #707070;
+  font-weight: 400;
+}
